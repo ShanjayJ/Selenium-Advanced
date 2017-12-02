@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TESTCASE TestNG Execution" duration-ms="21052" started-at="2017-11-19T17:23:44Z" finished-at="2017-11-19T17:24:05Z">
+    <groups>
+    </groups>
+    <test name="POM NTL Booking" duration-ms="21052" started-at="2017-11-19T17:23:44Z" finished-at="2017-11-19T17:24:05Z">
+      <class name="com.vmetry.testcases.Booking">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.vmetry.testcases.Booking@4dfa3a9d]" name="setUp" is-config="true" duration-ms="11157" started-at="2017-11-19T22:53:44Z" finished-at="2017-11-19T22:53:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="doBooking()[pri:0, instance:com.vmetry.testcases.Booking@4dfa3a9d]" name="doBooking" duration-ms="863" started-at="2017-11-19T22:53:55Z" finished-at="2017-11-19T22:53:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBooking -->
+        <test-method status="PASS" signature="hmelogin()[pri:0, instance:com.vmetry.testcases.Booking@4dfa3a9d]" name="hmelogin" duration-ms="401" started-at="2017-11-19T22:53:56Z" finished-at="2017-11-19T22:53:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hmelogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.vmetry.testcases.Booking@4dfa3a9d]" name="tearDown" is-config="true" duration-ms="8598" started-at="2017-11-19T22:53:56Z" finished-at="2017-11-19T22:54:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vmetry.testcases.Booking -->
+    </test> <!-- POM NTL Booking -->
+  </suite> <!-- TESTCASE TestNG Execution -->
+</testng-results>

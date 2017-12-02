@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Cloud Parallel Execution" parallel="tests" thread-count="5">
+	<test verbose="2" name="POM NTL Booking">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="20.0" />
+		<parameter name="platform" value="MAC" />
+		<classes>
+			<class name="com.vmetry.cloudtesting.ParallelCloudExecution" />
+		</classes>
+	</test> <!-- Default test -->
+	
+	<test name="Second Browser">
+	<parameter name="browser" value="chrome"/>
+  <parameter name="version" value="26.0"/>
+  <parameter name="platform" value="WINDOWS"/>
+  <classes>
+			<class name="com.vmetry.cloudtesting.ParallelCloudExecution" />
+		</classes>
+	</test>
+	
+	<test name="Third Browser">
+	<parameter name="browser" value="safari"/>
+  <parameter name="version" value="6.0"/>
+  <parameter name="platform" value="MAC"/>
+  <classes>
+			<class name="com.vmetry.cloudtesting.ParallelCloudExecution" />
+		</classes>
+	</test>
+</suite> <!-- Default suite -->
+           

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Vmetry TestNG]">
+  <test name="POM NTL Booking(failed)">
+    <parameter name="browser" value="CHROME"/>
+    <classes>
+      <class name="com.vmetry.testcases.Booking">
+        <methods>
+          <include name="hmelogin"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.vmetry.testcases.Booking -->
+    </classes>
+  </test> <!-- POM NTL Booking(failed) -->
+</suite> <!-- Failed suite [Vmetry TestNG] -->

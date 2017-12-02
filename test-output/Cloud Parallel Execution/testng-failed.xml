@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Cloud Parallel Execution]" parallel="tests">
+  <test name="Second Browser(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="26.0"/>
+    <parameter name="platform" value="WINDOWS"/>
+    <classes>
+      <class name="com.vmetry.cloudtesting.ParallelCloudExecution">
+        <methods>
+          <include name="doAutoComplete"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.vmetry.cloudtesting.ParallelCloudExecution -->
+    </classes>
+  </test> <!-- Second Browser(failed) -->
+  <test name="POM NTL Booking(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="20.0"/>
+    <parameter name="platform" value="MAC"/>
+    <classes>
+      <class name="com.vmetry.cloudtesting.ParallelCloudExecution">
+        <methods>
+          <include name="doAutoComplete"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.vmetry.cloudtesting.ParallelCloudExecution -->
+    </classes>
+  </test> <!-- POM NTL Booking(failed) -->
+  <test name="Third Browser(failed)" parallel="tests">
+    <parameter name="browser" value="safari"/>
+    <parameter name="version" value="6.0"/>
+    <parameter name="platform" value="MAC"/>
+    <classes>
+      <class name="com.vmetry.cloudtesting.ParallelCloudExecution">
+        <methods>
+          <include name="doAutoComplete"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.vmetry.cloudtesting.ParallelCloudExecution -->
+    </classes>
+  </test> <!-- Third Browser(failed) -->
+</suite> <!-- Failed suite [Cloud Parallel Execution] -->

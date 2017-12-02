@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Page Factory Execution">
+  <test verbose="2" name="PF NTL Booking">
+    <parameter name="browser" value="FIREFOX"></parameter>
+    <classes>
+      <class name="com.vmetry.testcases.PageFactoryImp"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
+           
