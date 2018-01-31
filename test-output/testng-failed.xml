@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [TESTCASE TestNG Execution]">
-  <test name="POM NTL Booking(failed)">
-    <parameter name="browser" value="CHROME"/>
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.vmetry.testcases.Booking">
+      <class name="com.vmetry.reports.ExtentReport">
         <methods>
-          <include name="hmelogin"/>
           <include name="setUp"/>
-          <include name="doBooking"/>
           <include name="tearDown"/>
+          <include name="chooseSugg"/>
+          <include name="publish"/>
         </methods>
-      </class> <!-- com.vmetry.testcases.Booking -->
+      </class> <!-- com.vmetry.reports.ExtentReport -->
     </classes>
-  </test> <!-- POM NTL Booking(failed) -->
-</suite> <!-- Failed suite [TESTCASE TestNG Execution] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

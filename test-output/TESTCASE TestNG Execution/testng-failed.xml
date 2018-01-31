@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [TESTCASE TestNG Execution]">
-  <test name="POM NTL Booking(failed)">
-    <parameter name="browser" value="CHROME"/>
+  <test name="CashKaro Login Page Automation(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.vmetry.testcases.Booking">
+      <class name="com.vmetry.testcases.LoginVerification">
         <methods>
-          <include name="hmelogin"/>
-          <include name="setUp"/>
-          <include name="doBooking"/>
-          <include name="tearDown"/>
+          <include name="frgtPass" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.vmetry.testcases.Booking -->
+      </class> <!-- com.vmetry.testcases.LoginVerification -->
     </classes>
-  </test> <!-- POM NTL Booking(failed) -->
+  </test> <!-- CashKaro Login Page Automation(failed) -->
 </suite> <!-- Failed suite [TESTCASE TestNG Execution] -->

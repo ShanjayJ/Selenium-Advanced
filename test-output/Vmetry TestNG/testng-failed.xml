@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Vmetry TestNG]">
-  <test name="POM NTL Booking(failed)">
-    <parameter name="browser" value="CHROME"/>
+  <test name="Sample Test Case(failed)">
     <classes>
-      <class name="com.vmetry.testcases.Booking">
+      <class name="com.vmetry.reports.Report">
         <methods>
-          <include name="hmelogin"/>
+          <include name="chooseSugg"/>
+          <include name="publish"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.vmetry.testcases.Booking -->
+      </class> <!-- com.vmetry.reports.Report -->
     </classes>
-  </test> <!-- POM NTL Booking(failed) -->
+  </test> <!-- Sample Test Case(failed) -->
 </suite> <!-- Failed suite [Vmetry TestNG] -->

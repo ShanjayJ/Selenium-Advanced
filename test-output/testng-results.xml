@@ -1,36 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TESTCASE TestNG Execution" duration-ms="21052" started-at="2017-11-19T17:23:44Z" finished-at="2017-11-19T17:24:05Z">
+  <suite name="Default suite" duration-ms="72612" started-at="2018-01-07T09:59:24Z" finished-at="2018-01-07T10:00:36Z">
     <groups>
     </groups>
-    <test name="POM NTL Booking" duration-ms="21052" started-at="2017-11-19T17:23:44Z" finished-at="2017-11-19T17:24:05Z">
-      <class name="com.vmetry.testcases.Booking">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.vmetry.testcases.Booking@4dfa3a9d]" name="setUp" is-config="true" duration-ms="11157" started-at="2017-11-19T22:53:44Z" finished-at="2017-11-19T22:53:55Z">
+    <test name="Default test" duration-ms="72612" started-at="2018-01-07T09:59:24Z" finished-at="2018-01-07T10:00:36Z">
+      <class name="com.vmetry.reports.ExtentReport">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.vmetry.reports.ExtentReport@4eb7f003]" name="setUp" is-config="true" duration-ms="58772" started-at="2018-01-07T15:29:24Z" finished-at="2018-01-07T15:30:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="inputNoiseWord()[pri:0, instance:com.vmetry.reports.ExtentReport@4eb7f003]" name="inputNoiseWord" duration-ms="175" started-at="2018-01-07T15:30:22Z" finished-at="2018-01-07T15:30:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputNoiseWord -->
+        <test-method status="PASS" signature="publish(org.testng.ITestResult)[pri:0, instance:com.vmetry.reports.ExtentReport@4eb7f003]" name="publish" is-config="true" duration-ms="124" started-at="2018-01-07T15:30:23Z" finished-at="2018-01-07T15:30:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[[TestResult name=inputNoiseWord status=SUCCESS method=ExtentReport.inputNoiseWord()[pri:0, instance:com.vmetry.reports.ExtentReport@4eb7f003] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="doBooking()[pri:0, instance:com.vmetry.testcases.Booking@4dfa3a9d]" name="doBooking" duration-ms="863" started-at="2017-11-19T22:53:55Z" finished-at="2017-11-19T22:53:56Z">
+        </test-method> <!-- publish -->
+        <test-method status="FAIL" signature="chooseSugg()[pri:1, instance:com.vmetry.reports.ExtentReport@4eb7f003]" name="chooseSugg" duration-ms="959" started-at="2018-01-07T15:30:23Z" finished-at="2018-01-07T15:30:24Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [haskell] but found [Haskell]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [haskell] but found [Haskell]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at org.testng.Assert.assertEquals(Assert.java:463)at com.vmetry.reports.ExtentReport.chooseSugg(ExtentReport.java:76)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doBooking -->
-        <test-method status="PASS" signature="hmelogin()[pri:0, instance:com.vmetry.testcases.Booking@4dfa3a9d]" name="hmelogin" duration-ms="401" started-at="2017-11-19T22:53:56Z" finished-at="2017-11-19T22:53:56Z">
+        </test-method> <!-- chooseSugg -->
+        <test-method status="PASS" signature="publish(org.testng.ITestResult)[pri:0, instance:com.vmetry.reports.ExtentReport@4eb7f003]" name="publish" is-config="true" duration-ms="140" started-at="2018-01-07T15:30:24Z" finished-at="2018-01-07T15:30:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chooseSugg status=FAILURE method=ExtentReport.chooseSugg()[pri:1, instance:com.vmetry.reports.ExtentReport@4eb7f003] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- hmelogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.vmetry.testcases.Booking@4dfa3a9d]" name="tearDown" is-config="true" duration-ms="8598" started-at="2017-11-19T22:53:56Z" finished-at="2017-11-19T22:54:05Z">
+        </test-method> <!-- publish -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.vmetry.reports.ExtentReport@4eb7f003]" name="tearDown" is-config="true" duration-ms="12397" started-at="2018-01-07T15:30:24Z" finished-at="2018-01-07T15:30:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.vmetry.testcases.Booking -->
-    </test> <!-- POM NTL Booking -->
-  </suite> <!-- TESTCASE TestNG Execution -->
+      </class> <!-- com.vmetry.reports.ExtentReport -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
